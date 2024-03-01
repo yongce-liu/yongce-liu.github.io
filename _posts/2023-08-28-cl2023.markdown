@@ -3,6 +3,7 @@ layout: post
 title:  "Online Trajectory Optimization for UAV-Assisted Hybrid FSO/RF Network With QoS-Guarantee"
 date:   2023-03-01 22:21:59 +00:00
 image: /images/cl2023.png
+venue: IEEE Communications Letters
 pdf: /pdfs/cl2023.pdf
 categories: research
 author: "Yongce Liu"
