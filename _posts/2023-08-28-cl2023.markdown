@@ -4,10 +4,10 @@ title:  "Online Trajectory Optimization for UAV-Assisted Hybrid FSO/RF Network W
 date:   2023-03-01 22:21:59 +00:00
 image: /images/cl2023.png
 venue: IEEE Communications Letters
-pdf: /pdfs/cl2023.pdf
+# pdf: /pdfs/cl2023.pdf
 categories: research
 author: "Yongce Liu"
 authors: "<strong>Yongce Liu</strong>, Ziyang Wu, Pengcheng Song"
-code: https://github.com/yongce-liu/UAV_FSO_RF_DRL
+# code: https://github.com/yongce-liu/UAV_FSO_RF_DRL
 ---
 Online Trajectory Optimization for UAV-Assisted Hybrid FSO/RF Network With QoS-Guarantee.
