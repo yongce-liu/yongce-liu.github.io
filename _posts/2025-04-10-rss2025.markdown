@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "A Probabilistic Measure of Multi-Robot Connectivity and Ergodic Optimal Contro"
+title:  "A Probabilistic Measure of Multi-Robot Connectivity and Ergodic Optimal Control"
 date:   2025-04-10 23:59:00 +00:00
 image: /images/rss2025.png
-venue: Robotics: Science and Systems
+venue: Robotics Science and Systems
 # pdf: /pdfs/cl2023.pdf
 categories: research
 author: "Yongce Liu"
