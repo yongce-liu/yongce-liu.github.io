@@ -8,6 +8,6 @@ venue: "Robotics: Science and Systems"
 categories: research
 author: "Yongce Liu"
 authors: "<strong>Yongce Liu</strong>, Zhongqiang Ren"
-# code: https://github.com/yongce-liu/UAV_FSO_RF_DRL
+code: https://github.com/rap-lab-org/public_pymec
 ---
 <!-- Online Trajectory Optimization for UAV-Assisted Hybrid FSO/RF Network With QoS-Guarantee. -->
