@@ -98,47 +98,7 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-.avatar-rotator {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-}
 
-.avatar-rotator img {
-  width: 100%;
-  max-width: 100%;
-  display: block;
-  transition: opacity 300ms ease;
-}
-
-.avatar-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 28px;
-  height: 28px;
-  border: 0;
-  border-radius: 999px;
-  background: transparent;
-  color: #fff;
-  font-size: 20px;
-  line-height: 28px;
-  cursor: pointer;
-  padding: 0;
-}
-
-.avatar-arrow-left {
-  left: 6px;
-}
-
-.avatar-arrow-right {
-  right: 6px;
-}
-
-.avatar-arrow:focus,
-.avatar-arrow:hover {
-  background: rgba(0, 0, 0, 0.7);
-}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

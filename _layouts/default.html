@@ -101,78 +101,11 @@
                 </p>
               </td>
               <td style="padding: 2.5%; width: 40%; max-width: 40%">
-                <div class="avatar-rotator">
-                  <img
-                    id="avatar-rotator"
-                    alt="profile photo"
-                    src="{{ site.avatar | default: 'images/photos/self.jpg' }}"
-                  />
-                  {% if site.avatar_images %}
-                  <button
-                    type="button"
-                    class="avatar-arrow avatar-arrow-left"
-                    aria-label="Previous photo"
-                  >
-                    &#8249;
-                  </button>
-                  <button
-                    type="button"
-                    class="avatar-arrow avatar-arrow-right"
-                    aria-label="Next photo"
-                  >
-                    &#8250;
-                  </button>
-                  <script>
-                    (function () {
-                      var images = [{% for img in site.avatar_images %}"{{ img }}"{% unless forloop.last %}, {% endunless %}{% endfor %}];
-                      var el = document.getElementById("avatar-rotator");
-                      if (!el) return;
-                      var initial = el.getAttribute("src");
-                      if (images.indexOf(initial) === -1) images.unshift(initial);
-                      var prevBtn = document.querySelector(".avatar-arrow-left");
-                      var nextBtn = document.querySelector(".avatar-arrow-right");
-                      if (images.length < 2) {
-                        if (prevBtn) prevBtn.style.display = "none";
-                        if (nextBtn) nextBtn.style.display = "none";
-                        return;
-                      }
-                      var idx = 0;
-                      var delayMs = 30000;
-                      var timer = null;
-                      function showIndex(nextIdx) {
-                        idx = (nextIdx + images.length) % images.length;
-                        el.style.opacity = "0";
-                        var next = images[idx];
-                        var preload = new Image();
-                        preload.onload = function () {
-                          el.src = next;
-                          el.style.opacity = "1";
-                        };
-                        preload.src = next;
-                      }
-                      function restartTimer() {
-                        if (timer) clearInterval(timer);
-                        timer = setInterval(function () {
-                          showIndex(idx + 1);
-                        }, delayMs);
-                      }
-                      if (prevBtn) {
-                        prevBtn.addEventListener("click", function () {
-                          showIndex(idx - 1);
-                          restartTimer();
-                        });
-                      }
-                      if (nextBtn) {
-                        nextBtn.addEventListener("click", function () {
-                          showIndex(idx + 1);
-                          restartTimer();
-                        });
-                      }
-                      restartTimer();
-                    })();
-                  </script>
-                  {% endif %}
-                </div>
+                <img
+                  alt="profile photo"
+                  src="{{ site.avatar | default: 'images/photos/self.jpg' }}"
+                  style="width: 100%; max-width: 100%; display: block"
+                />
               </td>
             </tr>
           </table>
@@ -229,6 +162,14 @@
                 <h2>Internship</h2>
                 <p>
                   <b
+                    ><a target="_blank" href=""
+                      >JD Explore Academy</a
+                    ></b
+                  >
+                  <span style="float: right">Mar. 2026 - Current </span>
+                </p>
+                <p>
+                  <b
                     ><a target="_blank" href="https://www.unitree.com/"
                       >Unitree Robotics</a
                     ></b
@@ -262,11 +203,12 @@
                 <h2>Research</h2>
                 <p>
                   I'm doing engineering projects on
-                  <b>Physical AI and Robotics</b>, such as robot learning and
-                  simulation infrastructure and teleoperation systems. I'm doing
-                  research on <b>Multi-Robot Trajectory Planning</b> with the
-                  perspective of Optimization. I have also served as a reviewer
-                  for IROS, ICRA, etc.
+                  <b>Physical AI and Robotics</b>, such as robot learning, world
+                  model, simulation infrastructure and teleoperation systems.
+                  I'm also doing research on
+                  <b>Multi-Robot Trajectory Planning</b> with the perspective of
+                  Optimization. I have also served as a reviewer for IROS, ICRA,
+                  etc.
                 </p>
               </td>
             </tr>
