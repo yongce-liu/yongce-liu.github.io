@@ -10,6 +10,7 @@ except Exception:
     )
     sys.exit(1)
 
+
 def make_thumbnails(src_root, dst_root):
     max_size = (160, 160)
 
@@ -27,6 +28,7 @@ def make_thumbnails(src_root, dst_root):
                     img.save(dst_path)
             except Exception as exc:
                 print(f"skip {src_path}: {exc}", file=sys.stderr)
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:

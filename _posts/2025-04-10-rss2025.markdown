@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "A Probabilistic Measure of Multi-Robot Connectivity and Ergodic Optimal Control"
-date:   2025-04-10 23:59:00 +00:00
+title: "A Probabilistic Measure of Multi-Robot Connectivity and Ergodic Optimal Control"
+date: 2025-04-10 23:59:00 +00:00
 image: rss2025.png
 venue: "Robotics: Science and Systems"
 # pdf: /pdfs/cl2023.pdf
@@ -10,4 +10,5 @@ author: "Yongce Liu"
 authors: "<strong>Yongce Liu</strong>, Zhongqiang Ren"
 code: https://github.com/rap-lab-org/public_pymec
 ---
+
 <!-- Online Trajectory Optimization for UAV-Assisted Hybrid FSO/RF Network With QoS-Guarantee. -->
